@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerte en orbite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="window-container">
+      
+<ul class="missions-list ">
+                <a href="mission1.html"><li>Mission 1</li></a>
+                <a href="mission2.html"><li>Mission 2</li></a>
+                <a href="mission3.html"><li>Mission 3</li></a>
+                <a href="mission4.html"><li>Mission 4</li></a>
+                <a href="mission5.html"><li>Mission 5</li></a>
+                <a href="mission6.html"><li>Mission 6</li></a>
+                <a href="mission7.html"><li>Mission 7<a class="vid"  href="video7.html">PLAY</a></li></a>
+                <a href="mission8.html"><li>Mission 8</li></a>
+            </ul>
+        <section class="container">
+            <img src="assets/img/fond3.jpg" alt="fond en aluminium">
+            <label for="missionInput">Mission 7: Salle informatique</label>
+            <input placeholder="Entrez votre code !" type="text" id="missionInput">
+            <button class="btn" onclick="verifierMission()">Valider mon code</button>
+            <p class="reponse"></p>
+          
+        </section>
+        <audio class="erreur" id="audioPlayer">
+            <source class="erreur" src="assets/audio/erreur_systeme.mp3"></source>
+        </audio>
+
+        <audio class="reussite" id="audioPlayer">
+            <source src="assets/audio/code-valide.mp4"></source>
+        </audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
